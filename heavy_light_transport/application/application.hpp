@@ -12,6 +12,7 @@ namespace Hlt {
             void render();
 
         private:
+            void renderPropertiesBar();
             void clear();
             void update();
     };

@@ -13,9 +13,7 @@ void Hlt::Application::render() {
         clear();
         Core::Docking::begin();
 
-        ImGui::Begin("Something");
-            ImGui::Text("This is a simple test to use imgui...");
-        ImGui::End();
+        renderPropertiesBar();
 
         Core::Docking::end();
         update();
@@ -33,4 +31,10 @@ void Hlt::Application::update() {
 
     imgui_->update();
     window_.bufferUpdate();
+}
+
+void Hlt::Application::renderPropertiesBar() {
+    ImGui::Begin("Something");
+        ImGui::Text("This is a simple test to use imgui...");
+    ImGui::End();
 }
