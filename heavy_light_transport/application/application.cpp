@@ -34,7 +34,10 @@ void Hlt::Application::update() {
 }
 
 void Hlt::Application::renderPropertiesBar() {
-    ImGui::Begin("Something");
+    ImGui::Begin("Properties");
         ImGui::Text("This is a simple test to use imgui...");
     ImGui::End();
+
+    static bool show_demo_window = true;
+    ImGui::ShowDemoWindow(&show_demo_window);
 }
