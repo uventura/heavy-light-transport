@@ -1,4 +1,4 @@
 cc_binary(
-    name = "main",
-    srcs = ["main.cpp"]
+    name = "hello",
+    srcs = ["hello.cpp"]
 )
